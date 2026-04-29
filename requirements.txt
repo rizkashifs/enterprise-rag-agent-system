@@ -1,0 +1,8 @@
+openai
+langchain
+llama-index
+faiss-cpu
+pydantic
+pyyaml
+fastapi
+pytest

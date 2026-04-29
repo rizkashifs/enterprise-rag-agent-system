@@ -1,0 +1,11 @@
+project:
+  name: enterprise-rag-agent-system
+retrieval:
+  vector_index: indexes/default
+  top_k: 8
+llm:
+  provider: openai
+  model: placeholder
+guardrails:
+  citations_required: true
+  pii_redaction: enabled
