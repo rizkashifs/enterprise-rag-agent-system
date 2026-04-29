@@ -1,3 +1,8 @@
 anthropic
 pyyaml
 pytest
+
+# Evaluation pipeline
+ragas>=0.2.0
+langchain-anthropic
+datasets

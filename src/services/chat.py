@@ -56,9 +56,11 @@ class RAGChatService:
         )
 
         answer = next((b.text for b in response.content if b.type == "text"), "")
-        citations = list({r.chunk.source for r in results if r.score > 0.01})
+        relevant = [r for r in results if r.score > 0.01]
+        citations = list({r.chunk.source for r in relevant})
+        contexts = [r.chunk.content for r in relevant]
 
-        chat_response = ChatResponse(answer=answer, citations=citations)
+        chat_response = ChatResponse(answer=answer, citations=citations, contexts=contexts)
 
         # 5. Guardrails
         passed, reason = validate(chat_response)
