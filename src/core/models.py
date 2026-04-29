@@ -42,5 +42,6 @@ class ToolCall:
 class ChatResponse:
     answer: str
     citations: list[str]
+    contexts: list[str] = field(default_factory=list)  # full text of retrieved passages
     tool_calls: list[ToolCall] = field(default_factory=list)
     policy_reason: str = ""

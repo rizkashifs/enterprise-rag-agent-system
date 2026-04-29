@@ -1,0 +1,62 @@
+[
+  {
+    "question": "How many days per week can employees work remotely?",
+    "ground_truth": "Employees may work remotely up to 3 days per week.",
+    "category": "hr_policy"
+  },
+  {
+    "question": "How far in advance must remote work approval be submitted?",
+    "ground_truth": "Remote work requires written manager approval submitted at least 48 hours in advance.",
+    "category": "hr_policy"
+  },
+  {
+    "question": "What VPN requirement exists for remote workers?",
+    "ground_truth": "All remote workers must connect through the company VPN at all times.",
+    "category": "hr_policy"
+  },
+  {
+    "question": "How long must new employees work on-site before they can work remotely?",
+    "ground_truth": "Employees in their first 90 days of employment must work on-site full-time.",
+    "category": "hr_policy"
+  },
+  {
+    "question": "How should customer data be classified?",
+    "ground_truth": "All customer data is classified as Confidential.",
+    "category": "security"
+  },
+  {
+    "question": "What encryption standard is required for confidential data?",
+    "ground_truth": "Confidential data must be encrypted both at rest and in transit using AES-256.",
+    "category": "security"
+  },
+  {
+    "question": "Can customer data be shared via personal email?",
+    "ground_truth": "No. Customer data must never be stored on personal devices or shared via personal email.",
+    "category": "security"
+  },
+  {
+    "question": "How quickly must a data policy violation be reported?",
+    "ground_truth": "Violations must be reported to the security team within 24 hours.",
+    "category": "security"
+  },
+  {
+    "question": "Within what timeframe must new employees complete security awareness training?",
+    "ground_truth": "New employees must complete mandatory security awareness training within their first 2 weeks.",
+    "category": "onboarding"
+  },
+  {
+    "question": "How quickly will IT provision a new employee's laptop?",
+    "ground_truth": "IT will provision the laptop and accounts within 24 hours of the start date.",
+    "category": "onboarding"
+  },
+  {
+    "question": "How often should new employees check in with their manager?",
+    "ground_truth": "New employees should schedule weekly check-ins with their manager during the first 90 days.",
+    "category": "onboarding"
+  },
+  {
+    "question": "What is the quarterly revenue figure?",
+    "ground_truth": "This information is not available in the provided knowledge base.",
+    "category": "out_of_scope"
+  }
+]
