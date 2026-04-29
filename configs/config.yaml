@@ -1,11 +1,14 @@
 project:
   name: enterprise-rag-agent-system
+
 retrieval:
-  vector_index: indexes/default
-  top_k: 8
+  top_k: 3
+  chunk_size: 60
+
 llm:
-  provider: openai
-  model: placeholder
+  provider: anthropic
+  model: claude-opus-4-7
+
 guardrails:
   citations_required: true
   pii_redaction: enabled
