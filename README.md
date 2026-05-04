@@ -1,6 +1,6 @@
 # enterprise-rag-agent-system
 
-An enterprise-grade GenAI system blueprint for retrieval-augmented generation, constrained agent orchestration, tool usage, evaluation, and guardrails.
+This repository demonstrates how enterprise systems build retrieval-augmented generation at scale — with constrained agent orchestration, tool usage, evaluation, and guardrails that go far beyond a naive RAG prototype.
 
 ## Description
 
@@ -13,6 +13,22 @@ This repository defines a clean architecture for an enterprise RAG and agent sys
 Enterprise GenAI systems must be accurate, observable, secure, and auditable. A strong architecture separates document ingestion from retrieval, retrieval from generation, and generation from tool execution. This enables teams to improve each part independently while maintaining governance.
 
 The system is designed for regulated and high-scale environments where hallucination risk, data leakage, citation quality, cost control, and tool misuse must be managed directly.
+
+## Why Agentic RAG
+
+Traditional RAG pipelines are static.
+
+This system introduces agents to:
+- dynamically plan queries
+- select tools
+- improve retrieval and reasoning
+
+## Design Principles
+
+- Standardization over ad-hoc pipelines
+- Observability as a first-class concern
+- Reproducibility over experimentation speed
+- Clear separation of concerns across lifecycle stages
 
 ## High-Level Architecture
 
@@ -97,3 +113,16 @@ enterprise-rag-agent-system/
 - Define guardrail policy schema for PII, citations, jailbreak resistance, and tool permissions.
 - Add conceptual traces for planner-executor workflows.
 - Add model and prompt evaluation scorecard templates.
+
+## Part of AI Platform
+
+This repository is part of a modular AI platform:
+
+- [ds-mlops-enterprise-system](https://github.com/rizkashifs/ds-mlops-enterprise-system) → defines standards and best practices
+- [mlops-control-plane](https://github.com/rizkashifs/mlops-control-plane) → manages model lifecycle and governance
+- [enterprise-rag-agent-system](https://github.com/rizkashifs/enterprise-rag-agent-system) → GenAI application layer
+- [hybrid-ds-genai-agentic-mlops-system](https://github.com/rizkashifs/hybrid-ds-genai-agentic-mlops-system) → ML + LLM + agentic workflows
+- [ai-observability-and-drift-platform](https://github.com/rizkashifs/ai-observability-and-drift-platform) → monitoring and reliability
+- [multi-model-routing-engine](https://github.com/rizkashifs/multi-model-routing-engine) → model selection and optimization
+
+These repositories together represent an enterprise-grade AI system.
